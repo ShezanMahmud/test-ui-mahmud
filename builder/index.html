@@ -7,61 +7,295 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Builder</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/ea9bd22eef.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div id="app"></div>
+<body class="">
 
-  <div id="layout" style="display: none;">
 
-    <div class="container-fluid">
+  <div style="height: 100vh; width: 100vw;" class="row bg-white">
 
-      <!-- Navigation -->
-      <div class="row" id="builder-navigation">
 
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-2">
-            <button id="action_clear" type="button" class="btn btn-secondary">clear</button>
+
+    <!-- left side -->
+    <div class="col-md-9 bg-white border">
+      <!-- top -->
+      <div style="height: 8%; width: 100%;" class=" container dNone">
+        <div class="d-flex justify-content-between border dNone  px-2 py-2 ">
+          <div class="dNone">
+            <p>Ads</p>
           </div>
-          <div class="col col-lg-2">
-            <button id="action_save" type="button" class="btn btn-secondary">save</button>
+          <div class="dNone">
+            <p>index.html</p>
           </div>
-          <div class="col col-lg-2">
-            <button id="action_restore" type="button" class="btn btn-secondary">restore</button>
+          <div class="d-flex gap-3 dNone">
+            <button type="button" class="dNone btn btn-dark">Save</button>
+            <button type="button" class="dNone btn btn-primary">Download Project</button>
+            <button type="button" class="dNone btn btn-light">Preview</button>
           </div>
-          <div class="col col-lg-2">
-            <button id="action_undo" type="button" class="btn btn-secondary">undo</button>
-          </div>          
         </div>
-
       </div>
+      <!-- bottom -->
+      <div style="height: 90%;" class="row mt-3 elements">
+        <!-- left -->
+        <div class="col-md-3 p-2 border ">
+          <div class="d-flex  gap-2">
+            <div class="d-flex gap-2  p-1">
+              <div class="border-bottom border-end px-1 h-75">
+                <p>Grid</p>
+              </div>
+              <p>Components</p>
+            </div>
+            <div class="d-flex gap-2  p-1">
+              <div class="border-bottom border-end d-flex px-1  h-75">
+                <p>Editor</p>
+                <p> Page</p>
+              </div>
+            </div>
 
+          </div>
+          <!-- drop down -->
+          <div class="ms-2 ">
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Cards
+                <p>10</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Charts
+                <p>8</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Components
+                <p>9</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Form
+                <p>5</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Header
+                <p>7</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Typography
+                <p>6</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+            <div style="height: 30px;" class="d-flex align-items-center border-bottom gap-2 mt-3">
+              <i style="height: 100%;" class="fa-solid fa-chevron-right "></i>
+              <button class="btn  btn-sm d-flex justify-content-between w-100" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+
+                Data integretion <span class="bg-dark rounded px-1 text-white">Beta</span>
+                <p>4</p>
+                <ul class="dropdown-menu">
+                  <p>Card</p>
+                  <p>Chart</p>
+                  <p>Components</p>
+                </ul>
+              </button>
+            </div>
+
+            <div class="d-flex mt-5 justify-content-center align-items-center p-4">
+              
+                <img class=" w-25" src="/public/light.png" alt="">
+              
+                <p class="fs-6 mb-0">Need more Options? <br>Let us know what you needed </p>
+            </div>
+
+          </div>
+
+          <!-- drop down -->
+        </div>
+        <!-- right -->
+        <div class="col-md-9 border ">
+          <!-- coosel start-->
+          <div class="border mt-2 p-2">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide h-45" data-bs-touch="false"
+              data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://static.photocdn.pt/images/articles/2018/12/05/articles/2017_8/beginner_photography_mistakes-1.webp"
+                    class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.pexels.com/photos/610293/pexels-photo-610293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- coosel end -->
+          <div class="mt-5 d-flex justify-content-center">
+            <p class="justify-content-center align-items-center">Start creating your template by dragging elements from right <span><i class="fa-solid fa-chevron-right"></i></span> </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- right side -->
+    <div class="col-md-3 border">
+      <div class="  ">
+        <div class="d-flex  gap-2">
+          <div class="p-1">
+            <div class="border-bottom border-end d-flex gap-2  px-1 h-75">
+              <p>Grid</p>
+              <p>Components</p>
+            </div>
+          </div>
+          <div class="d-flex gap-2  p-1">
+            <div class="d-flex px-1  h-75">
+              <p>Editor</p>
+            </div>
+            <div class="border-start border-bottom h-75 px-2">
+              <p> Page</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>DIV</h1>
+        </div>
+        <div>
+          <p>Classes</p>
+        </div>
+        <div>
+          <input class="border rounded" type="text" placeholder="Add more class" name="" id="">
+        </div>
+        <div style="margin-bottom: 70%;" class="mt-2 ">
+          <ul style="list-style: none;" class="d-flex flex-wrap align-items-center gap-2  text-white ">
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              Position-relative
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              Min-height-300
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              h-200
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              d-flex
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              flex-column
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              justify-between-end
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              mt-auto
+            </li>
+            <li class="bg-dark rounded px-2 py-1">
+              <i class="fa-solid fa-earth-oceania"></i>
+              p-4
+            </li>
 
-    <!-- BUILDER -->
-    <div class="row" id="builder-container">
-      
-      <!-- Components -->
-      <div class="col builder-components" id="builder-components"></div>
-      
-      <!-- Current Page -->
-      <div class="col-8" id="builder-content">
-        <div id="dropzone" class="dropzone">dropzone</div>
+          </ul>
+        </div>
+        <div class="d-flex  justify-content-between">
+          <div class="">
+            <p>Show grid layout</p>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+            </div>
+          </div>
+          <div class="mt-3 border px-2 py-2 rounded h-25">
+            <i class="fa-solid fa-question"></i>
+          </div>
+        </div>
       </div>
-
-      <!-- PROPS -->
-      <div class="col" id="builder-props">
-        <div class="row" id="builder-props-title"></div>
-        <div class="row" id="builder-props-content"></div>
-        <div class="row" id="builder-props-attribute"></div>
-      </div>
-      
     </div>
+  </div>
 
-  </div>
-  </div>
+
+
+
+
+  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>

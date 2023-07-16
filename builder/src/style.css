@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,7 +28,7 @@ body {
   display: flex;
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -156,7 +156,7 @@ button:focus-visible {
   display: block;
 }*/
 
-.dropzone {
+/* .dropzone {
   background-color: #6DB65B;
   flex-basis: 100%;
   flex-grow: 1;
@@ -223,4 +223,23 @@ button:focus-visible {
 .border-props {
   border: 1px solid red !important;
   margin: 2px;
+}  */
+
+
+
+@media only screen and (max-width: 600px) {
+  .dNone {
+   display: none;
+    width: full;
+    margin: 0;
+    padding: 0;
+  }
+  .icon{
+    color: black;
+  }
+  .elements{
+    width: full;
+    margin: 0;
+    padding: 0;
+  }
 }
